@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Home Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .course-card {
+            margin-bottom: 20px;
+        }
+        .footer {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 20px;
+        }
+       
+    body {
+        font-family: Arial, sans-serif;
+        background-image: url("https://brightfuturewelfare.com/img/courses.jpg");
+        background-size: cover;
+    }
+
+    .navbar {
+        margin-bottom: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .navbar-nav .nav-link {
+        margin-right: 10px;
+    }
+
+    .container {
+        margin-top: 50px;
+    }
+
+    .course-card {
+        transition: transform 0.3s;
+    }
+
+    .course-card:hover {
+        transform: scale(1.05);
+    }
+
+    .card-img-top {
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .card-title {
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        border: none;
+    }
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+    }
+
+    .footer {
+        background-color: #343a40;
+        color: #ffffff;
+        padding: 20px 0;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .footer p {
+        margin: 0;
+    }
+
+
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">CourseSite</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-4">
+        <h1 class="text-center mb-4">Available Courses</h1>
+        <div class="row">
+            <!-- Course Card 1 -->
+            <div class="col-md-4">
+                <div class="card course-card">
+                    <img src="https://www.classcentral.com/report/wp-content/uploads/2022/05/Java-BCG-Banner.png" class="card-img-top" alt="Course Image 1">
+                    <div class="card-body">
+                        <h5 class="card-title"> JAVACourse</h5>
+                        <p class="card-text">Short description of the course content.</p>
+                        <a href="https://www.coursera.org/courses?query=java" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Course Card 2 -->
+            <div class="col-md-4">
+                <div class="card course-card">
+                    <img src="https://www.emexotechnologies.com/wp-content/uploads/2021/01/python-training-emexo.png" class="card-img-top" alt="Course Image 2">
+                    <div class="card-body">
+                        <h5 class="card-title">PYTHONCourse </h5>
+                        <p class="card-text">Short description of the course content.</p>
+                        <a href="https://www.udemy.com/course/100-days-of-code/?utm_source=adwords&utm_medium=udemyads&utm_campaign=Python_v.PROF_la.EN_cc.INDIA_ti.7380&campaigntype=Search&portfolio=India&language=EN&product=Course&test=&audience=Keyword&topic=&priority=&utm_content=deal4584&utm_term=_._ag_78980845666_._ad_670210058828_._kw_python+course_._de_c_._dm__._pl__._ti_kwd-3211419183_._li_9154427_._pd__._&matchtype=b&gad_source=1&gclid=CjwKCAjw65-zBhBkEiwAjrqRMAHMvZNKnXowAVRSZ29-VkM23PRtJMud8v8Hwmz9K2LoDF_z9-YAwBoCp1kQAvD_BwE&couponCode=IND21PM" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Course Card 3 -->
+            <div class="col-md-4">
+                <div class="card course-card">
+                    <img src="https://ifda.in/img/c-programming-course.webp" class="card-img-top" alt="Course Image 3">
+                    <div class="card-body">
+                        <h5 class="card-title"> CCourse </h5>
+                        <p class="card-text">Short description of the course content.</p>
+                        <a href="https://ifda.in/c-programming-course.php" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 CourseSite. All rights reserved.</p>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
